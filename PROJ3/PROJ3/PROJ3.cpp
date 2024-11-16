@@ -8,9 +8,7 @@ int main() {
 
     merge b(a);
 
-    int i = 0;
-    while (i < b.tablen(a)) {
-        cout << b.tab[i] << " , ";
-        i++;
-    }
+    b.returntab(a);
+    cout << endl << endl;
+    b.returntabs(a);
 }
