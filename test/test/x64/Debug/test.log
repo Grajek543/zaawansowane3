@@ -1,0 +1,5 @@
+﻿  test.cpp
+C:\Users\Grzegorz\Desktop\projekty\zaawansowane3\test\test\test.cpp(34,6): warning C4101: "k": lokalna zmienna, do której nie istnieje odwołanie
+  (kompilowanie pliku źródłowego „/test.cpp”)
+  
+  test.vcxproj -> C:\Users\Grzegorz\Desktop\projekty\zaawansowane3\test\x64\Debug\test.exe
