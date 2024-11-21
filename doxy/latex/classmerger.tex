@@ -1,0 +1,157 @@
+\doxysection{merger Class Reference}
+\hypertarget{classmerger}{}\label{classmerger}\index{merger@{merger}}
+
+
+Klasa merger oraz deklaracje jej metod.  
+
+
+
+
+{\ttfamily \#include $<$pch.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmerger_a680495ab5d858f738268ca589179c520}{merger}} (string a)
+\begin{DoxyCompactList}\small\item\em konstruktor, automatycznie sortuje tablicê \end{DoxyCompactList}\item 
+\Hypertarget{classmerger_a3a88ae26e8fbf5a7765c08674fb2efc0}\label{classmerger_a3a88ae26e8fbf5a7765c08674fb2efc0} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}merger} ()
+\begin{DoxyCompactList}\small\item\em Destruktor, usuwa zmienne dynamiczne tab i tabs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmerger_ab6e8cfd7e200afe41eb9551c0e3eee0c}{check}} (int i, string a)
+\begin{DoxyCompactList}\small\item\em metoda check, zwraca d³ugoœæ danego elementu tablicy (np. 3 element to 25 czyli ma d³ugoœæ 2) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmerger_aa2d7d913f8bf56f6ac2e118aa8db8ff2}{tablen}} (string a)
+\begin{DoxyCompactList}\small\item\em metoda tablen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmerger_ace1aa78b2dba87060f649dce15ee9b64}{returntab}} (string a)
+\begin{DoxyCompactList}\small\item\em metoda returntab, wypisuje tablicê z przecinkami \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmerger_a17358d459337eff98962411ead1cb615}{tabtotabs}} (int a)
+\begin{DoxyCompactList}\small\item\em metoda returntab, konwertuje string tab do tablicy int tabs \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmerger_a2a130ac436d4dbef508367a034974878}{sort}} (int a)
+\begin{DoxyCompactList}\small\item\em metoda sort, sortuje tablicê tabs \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmerger_a03cdb880088aa04d3337ea02b9e3e179}{returntabs}} (string a)
+\begin{DoxyCompactList}\small\item\em metoda returntabs,zwraca tablicê w stringu \end{DoxyCompactList}\item 
+\Hypertarget{classmerger_ac60758ec8ffa6b5953f7e1ca9504b023}\label{classmerger_ac60758ec8ffa6b5953f7e1ca9504b023} 
+int \texorpdfstring{$\ast$}{*} {\bfseries tabser} ()
+\begin{DoxyCompactList}\small\item\em metoda tabser, zwraca wskaŸnik na tabs \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa merger oraz deklaracje jej metod. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmerger_a680495ab5d858f738268ca589179c520}\index{merger@{merger}!merger@{merger}}
+\index{merger@{merger}!merger@{merger}}
+\doxysubsubsection{\texorpdfstring{merger()}{merger()}}
+{\footnotesize\ttfamily \label{classmerger_a680495ab5d858f738268ca589179c520} 
+merger\+::merger (\begin{DoxyParamCaption}\item[{string}]{a}{}\end{DoxyParamCaption})}
+
+
+
+konstruktor, automatycznie sortuje tablicê 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ tablica do posortowania ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmerger_ab6e8cfd7e200afe41eb9551c0e3eee0c}\index{merger@{merger}!check@{check}}
+\index{check@{check}!merger@{merger}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{classmerger_ab6e8cfd7e200afe41eb9551c0e3eee0c} 
+int merger\+::check (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{string}]{a}{}\end{DoxyParamCaption})}
+
+
+
+metoda check, zwraca d³ugoœæ danego elementu tablicy (np. 3 element to 25 czyli ma d³ugoœæ 2) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ miejece elementu w string a \\
+\hline
+{\em a} & -\/ nieposortowana tablica tab \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmerger_ace1aa78b2dba87060f649dce15ee9b64}\index{merger@{merger}!returntab@{returntab}}
+\index{returntab@{returntab}!merger@{merger}}
+\doxysubsubsection{\texorpdfstring{returntab()}{returntab()}}
+{\footnotesize\ttfamily \label{classmerger_ace1aa78b2dba87060f649dce15ee9b64} 
+void merger\+::returntab (\begin{DoxyParamCaption}\item[{string}]{a}{}\end{DoxyParamCaption})}
+
+
+
+metoda returntab, wypisuje tablicê z przecinkami 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ nieposortowana tablica tab \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmerger_a03cdb880088aa04d3337ea02b9e3e179}\index{merger@{merger}!returntabs@{returntabs}}
+\index{returntabs@{returntabs}!merger@{merger}}
+\doxysubsubsection{\texorpdfstring{returntabs()}{returntabs()}}
+{\footnotesize\ttfamily \label{classmerger_a03cdb880088aa04d3337ea02b9e3e179} 
+string merger\+::returntabs (\begin{DoxyParamCaption}\item[{string}]{a}{}\end{DoxyParamCaption})}
+
+
+
+metoda returntabs,zwraca tablicê w stringu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ nieposortowana tablica tab \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmerger_a2a130ac436d4dbef508367a034974878}\index{merger@{merger}!sort@{sort}}
+\index{sort@{sort}!merger@{merger}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{classmerger_a2a130ac436d4dbef508367a034974878} 
+void merger\+::sort (\begin{DoxyParamCaption}\item[{int}]{spaces}{}\end{DoxyParamCaption})}
+
+
+
+metoda sort, sortuje tablicê tabs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spaces} & -\/ iloœæ elementów tablicy tabs \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmerger_aa2d7d913f8bf56f6ac2e118aa8db8ff2}\index{merger@{merger}!tablen@{tablen}}
+\index{tablen@{tablen}!merger@{merger}}
+\doxysubsubsection{\texorpdfstring{tablen()}{tablen()}}
+{\footnotesize\ttfamily \label{classmerger_aa2d7d913f8bf56f6ac2e118aa8db8ff2} 
+int merger\+::tablen (\begin{DoxyParamCaption}\item[{string}]{a}{}\end{DoxyParamCaption})}
+
+
+
+metoda tablen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ nieposortowana tablica tab \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmerger_a17358d459337eff98962411ead1cb615}\index{merger@{merger}!tabtotabs@{tabtotabs}}
+\index{tabtotabs@{tabtotabs}!merger@{merger}}
+\doxysubsubsection{\texorpdfstring{tabtotabs()}{tabtotabs()}}
+{\footnotesize\ttfamily \label{classmerger_a17358d459337eff98962411ead1cb615} 
+void merger\+::tabtotabs (\begin{DoxyParamCaption}\item[{int}]{spaces}{}\end{DoxyParamCaption})}
+
+
+
+metoda returntab, konwertuje string tab do tablicy int tabs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spaces} & -\/ iloœæ elementów tablicy tabs \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Grzegorz/\+Desktop/projekty/zaawansowane3/test/test/\mbox{\hyperlink{pch_8h}{pch.\+h}}\item 
+C\+:/\+Users/\+Grzegorz/\+Desktop/projekty/zaawansowane3/test/test/pch.\+cpp\end{DoxyCompactItemize}

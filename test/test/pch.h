@@ -1,3 +1,5 @@
+/// @file pch.h Plik zawieraj¹cy klasê merger
+
 //
 // pch.h
 //
@@ -10,11 +12,11 @@
 #include <algorithm>
 
 using namespace std;
-
+/// @brief Klasa merger oraz deklaracje jej metod
 class merger {
 private:
-	string* tab;
-	int* tabs;
+	string* tab;///< wskaŸnik do Zmiennej zawieraj¹cej nieposortowan¹ tablicê typu string
+	int* tabs;///< wskaŸnik do tablicy zawieraj¹cej posortowan¹ tablicê tab
 public:
 
 	merger(string a);

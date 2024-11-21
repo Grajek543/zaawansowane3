@@ -1,3 +1,5 @@
+/// @file test.cpp Plik g³ówny
+
 //
 // pch.cpp
 //
@@ -7,7 +9,8 @@
 #include <algorithm>
 
 using namespace std;
-
+/// @brief konstruktor, automatycznie sortuje tablicê
+/// @param a - tablica do posortowania 
 merger::merger(string a) {
     if (a != "") {
         int i = 0;
@@ -39,13 +42,15 @@ merger::merger(string a) {
     }
     
 }
-
+/// @brief Destruktor, usuwa zmienne dynamiczne tab i tabs
 merger::~merger() {
     delete[] tab;
     delete[] tabs;
 };
 
-
+/// @brief metoda check, zwraca d³ugoœæ danego elementu tablicy (np. 3 element to 25 czyli ma d³ugoœæ 2) 
+/// @param i - miejece elementu w string a 
+/// @param a - nieposortowana tablica tab
 int merger::check(int i, string a) {
     int length = 0;
     while (i + length < a.length() && a[i + length] != ' ') {
@@ -54,7 +59,8 @@ int merger::check(int i, string a) {
     return length;
 }
 
-
+/// @brief metoda tablen
+/// @param a - nieposortowana tablica tab
 int merger::tablen(string a) {
     int spaces = 0;
     for (int j = 0; j < a.length(); j++) {
@@ -64,7 +70,8 @@ int merger::tablen(string a) {
     }
     return spaces + 1;
 }
-
+/// @brief metoda returntab, wypisuje tablicê z przecinkami
+/// @param a - nieposortowana tablica tab
 void merger::returntab(string a) {
     int i = 0;
     while (i < tablen(a)) {
@@ -72,7 +79,8 @@ void merger::returntab(string a) {
         i++;
     }
 }
-
+/// @brief metoda returntab, konwertuje string tab do tablicy int tabs 
+/// @param spaces - iloœæ elementów tablicy tabs
 void merger::tabtotabs(int spaces) {
     int i = 0;
     while (i < (spaces)) {
@@ -80,7 +88,8 @@ void merger::tabtotabs(int spaces) {
         i++;
     }
 }
-
+/// @brief metoda sort, sortuje tablicê tabs
+/// @param spaces - iloœæ elementów tablicy tabs
 void merger::sort(int spaces) {
     int mnoznik = 1;
 
@@ -127,7 +136,8 @@ void merger::sort(int spaces) {
 
 
 
-
+/// @brief metoda returntabs,zwraca tablicê w stringu
+/// @param a - nieposortowana tablica tab
 string merger::returntabs(string a) {
     if (tab[0] == "") {
         return "";
@@ -145,7 +155,7 @@ string merger::returntabs(string a) {
         return  r;
     }
 }
-
+/// @brief metoda tabser, zwraca wskaŸnik na tabs
 int* merger::tabser() {
     return tabs;
 }
